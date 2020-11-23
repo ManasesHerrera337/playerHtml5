@@ -42,7 +42,7 @@
 }	
 
 .buttons button:before {
-	content: '\f36b'; /*'\f144'*/
+	content: '\f144'; /*'\f144'*/
 	font-family: 'Font Awesome 5 Free';
 	width: 30px;
 	height: 30px;

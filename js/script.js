@@ -25,7 +25,7 @@ $(document).ready(function(){
 	// var juice = $(".color-juice");
 	// var btn = $("#play-pause");
 
-	$("#playPause, .c-video").click(function(){
+	$("#playPause").click(function(){
 		
 
 
@@ -38,5 +38,13 @@ $(document).ready(function(){
 		}
 	});
 
+	video.addEventListener('timeupdate', function(){
+		var juicePos = video.currentTime / video.duration;
+		juice.style.width = juicePos * 100 + "%";
+	
+		if (video.ended) {
+			btn.className = "play";
+		}
+	});
 
 });
