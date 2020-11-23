@@ -6,6 +6,7 @@
 
 </head>
 <body>
+	<h1>hola mundo</h1>
 	<div class="container">
 		<div class="c-video">
 			<video class="video" src="video/video.mp4"  ></video>
