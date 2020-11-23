@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-	<h1>hola mundo</h1>
+
 	<div class="container">
 		<div class="c-video">
 			<video class="video" src="video/video.mp4"  ></video>
@@ -23,6 +24,7 @@
 
 	
 	<script src="js/jquery.js"></script>
+	<script src="js/fontawesome-free-5.15.1-web/js/all.min.css"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>			

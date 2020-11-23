@@ -25,7 +25,7 @@ $(document).ready(function(){
 	// var juice = $(".color-juice");
 	// var btn = $("#play-pause");
 
-	$("#playPause").click(function(){
+	$("#playPause, .c-video").click(function(){
 		
 
 
