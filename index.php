@@ -16,7 +16,10 @@
 					 <div class="color-juice"> </div>
 				</div>
 				 <div class="buttons">
-				 	<button type="button" id="playPause"></button>
+				 	<button type="button" id="playPause">
+				 		<i class="fa fa-play"></i>
+				 	</button>
+				 	<button type="button">pause</button>
 				 </div> 
 			</div>
 		</div>
@@ -24,7 +27,7 @@
 
 	
 	<script src="js/jquery.js"></script>
-	<script src="js/fontawesome-free-5.15.1-web/js/all.min.css"></script>
+	<!-- <script src="css/fontawesome-free-5.15.1-web/js/all.min.js"></script> -->
 	<script src="js/script.js"></script>
 </body>
 </html>			

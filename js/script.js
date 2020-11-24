@@ -25,20 +25,23 @@ $(document).ready(function(){
 	// var juice = $(".color-juice");
 	// var btn = $("#play-pause");
 
-	$("#playPause").click(function(){
-		
-
-
-		if (video.paused) {
+	jQuery.togglePlayPause = function() { 
+	  	if (video.paused) {
 			btn.className = 'pause';
 			video.play();
 		}else{
 			btn.className = "play";
 			video.pause();
 		}
+	};
+
+	$("#playPause, .video").click(function(){
+		$.togglePlayPause();
 	});
 
+
 	video.addEventListener('timeupdate', function(){
+		juice.style.background = "red";
 		var juicePos = video.currentTime / video.duration;
 		juice.style.width = juicePos * 100 + "%";
 	

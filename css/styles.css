@@ -20,14 +20,16 @@
 	transform: translateY(0);
 }
 .controls {
+	margin-top: -50px;
 	display: flex;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	flex-wrap: wrap;
-	background: rgb(0, 0, 0, 0.7);
+	background: rgb(0, 0, 0, 0.5);
 	transform: translateY(100%) translateY(-10%);
 	transition: all .2s;
+
 }
 
 .buttons {
@@ -41,8 +43,8 @@
 	cursor: pointer;
 }	
 
-.buttons button:before {
-	content: '\f144'; /*'\f144'*/
+.buttons button#playPause:before {
+	//content: ''; /*'\f144'    \f04b*/
 	font-family: 'Font Awesome 5 Free';
 	width: 30px;
 	height: 30px;
@@ -54,23 +56,25 @@
 }
 
 .buttonns button.play:before {
-	content: '\f144';
+	content: '\f04b';
 }
 
 .buttonns button.pause:before {
-	content: '\f28b';
+	content: '\f28b'; /* \f28b*/
 }
 
 .color-bar {
-	height: 10px;
+	height: 5px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #000;
-
+	background: rgb(0, 0, 0, 0.1);
 }
+	
+	
 
 .color-juice {
 	height: 5px;
-	background: red; /*#1ABB9C;*/
+	background: transparent; /*#1ABB9C;*/
+
 }
