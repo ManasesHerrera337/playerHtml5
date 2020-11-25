@@ -21,6 +21,8 @@
 }
 .controls {
 	margin-top: -50px;
+	height: 30px;
+
 	display: flex;
 	position: relative;
 	bottom: 0;
@@ -29,8 +31,14 @@
 	background: rgb(0, 0, 0, 0.5);
 	transform: translateY(100%) translateY(-10%);
 	transition: all .2s;
-
 }
+
+.controls .labels  {
+	display: inline-block;
+	font-size: 15px;
+	color: #FFF; 
+}
+
 
 .buttons {
 	padding: 1px;
@@ -43,25 +51,19 @@
 	cursor: pointer;
 }	
 
-.buttons button#playPause:before {
-	//content: ''; /*'\f144'    \f04b*/
-	font-family: 'Font Awesome 5 Free';
-	width: 30px;
-	height: 30px;
+.buttons button#playPause {
+	padding-bottom: 13px;
 	display: inline-block;
-	font-size: 20px;
-	color: #fff; 
-	-webkit-font-smoothing; antialiased;
+	font-size: 15px;
+	color: #FFF; 
+}
+
+
 	
-}
+	
 
-.buttonns button.play:before {
-	content: '\f04b';
-}
 
-.buttonns button.pause:before {
-	content: '\f28b'; /* \f28b*/
-}
+
 
 .color-bar {
 	height: 5px;

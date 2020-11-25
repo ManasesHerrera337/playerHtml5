@@ -10,17 +10,20 @@
 
 	<div class="container">
 		<div class="c-video">
-			<video class="video" src="video/video.mp4"  ></video>
+			<video class="video" src="video/video2.mp4"  ></video>
 			<div class="controls">
 				<div class="color-bar">
 					 <div class="color-juice"> </div>
 				</div>
 				 <div class="buttons">
-				 	<button type="button" id="playPause">
-				 		<i class="fa fa-play"></i>
+				 	<button type="button"  id="playPause">
+				 		<i id="icon" class="fa fa-play"></i>
 				 	</button>
-				 	<button type="button">pause</button>
+				 	
 				 </div> 
+				 <div class="labels">
+				 	<span id="ahora"></span> / <span id="duracion"></span> 
+				 </div>
 			</div>
 		</div>
 	</div>
