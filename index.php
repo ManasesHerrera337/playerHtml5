@@ -24,6 +24,9 @@
 				 <div class="labels">
 				 	<span id="ahora"></span> / <span id="duracion"></span> 
 				 </div>
+				 <div class="controlVol">
+				 	<!-- <input type="range"> -->
+				 </div>
 			</div>
 		</div>
 	</div>

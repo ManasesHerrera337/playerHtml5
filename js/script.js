@@ -1,21 +1,3 @@
-
-
-// function togglePlayPause(){
-// 	if (video.paused) {
-// 		btn.className = 'pause';
-// 		video.play;
-// 	}else{
-// 		btn.className = "play";
-// 		video.paused;
-// 	}
-// }
-
-// btn.onclick = function (){
-// 	alert("play");
-// }
-
-
-
 $(document).ready(function(){
 	var video = document.querySelector('.video');
 	var juice = document.querySelector('.color-juice');
@@ -42,18 +24,13 @@ $(document).ready(function(){
 	  	minute = (minute < 10)? '0' + minute : minute;
 	  	var second = seconds % 60;
 	  	second = (second < 10)? '0' + second : second;
-		
-	  	return hour + ':' + minute + ':' + second.toFixed(0);
-
+	  	return hour + ':' + minute + ':' + second ; 
 	}
 
 
-
-	var timevideo = video.duration;
-	
-	// $("#duracion").text(timevideo);
-
-
+	$("#ahora").text("00:00:00");
+	//muestra el tiempo total del video
+	$("#duracion").text($.segInMin(video.duration.toFixed(0)));
 
 
 	$("#playPause, .video").click(function(){
@@ -68,10 +45,15 @@ $(document).ready(function(){
 		var juicePos = video.currentTime / video.duration;
 		juice.style.width = juicePos * 100 + "%";
 
-		var time = $.segInMin(video.duration);
 
-		$("#ahora").text(video.currentTime.toFixed(0));
-		$("#duracion").text(time);
+		//muestra el tiempo transcurrido del video
+		$("#ahora").text($.segInMin(video.currentTime.toFixed(0)));
+		
+			
+		
+
+
+		
 	
 		if (video.ended) {
 			icon.className = 'fa fa-play';
