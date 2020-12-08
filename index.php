@@ -10,7 +10,10 @@
 
 	<div class="container">
 		<div class="c-video">
-			<video class="video" src="video/video2.mp4"  ></video>
+			<video class="video"  > <!-- src="video/video2.mp4" -->
+
+				<source src="video/video2.mp4">
+			</video>
 			<div class="controls">
 				<div class="color-bar">
 					 <div class="color-juice"> </div>
@@ -24,9 +27,14 @@
 				 <div class="labels">
 				 	<span id="ahora"></span> / <span id="duracion"></span> 
 				 </div>
-				 <div class="controlVol">
-				 	<!-- <input type="range"> -->
+				 
+				  <input type="checkbox"  id="mute" />
+				 
+				 <div class="controlVol" >
+				 	<input type="range" id="volumen">
 				 </div>
+
+
 			</div>
 		</div>
 	</div>
